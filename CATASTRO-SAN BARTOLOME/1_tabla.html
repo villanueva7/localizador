@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla de Datos</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .highlight {
+            background-color: yellow; /* Color de resaltado */
+		
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <link rel="stylesheet" href="pantalla_1/styles.css">
+
+    <img src="pantalla_1/logo.jpg" alt="Logo de la empresa">
+    <h1>CATASTRO - DISTRITO DE SAN BARTOLOME - BASE DE DATOS ALFANUMERICA</h1>
+    
+</header>
+
+
+<input type="text" id="filtroID" placeholder="Buscar por ID" onkeyup="filtrarTabla()">
+
+
+
+<table id="dataTable">
+    <thead>
+        <tr>
+           
+            <th>ID</th>
+            <th>SECTOR</th>
+            <th>MANZANA</th>
+			<th>LOTE</th>
+            <th>AREA</th>
+            <th>PERIMETRO</th>
+            <th>COORDENADA X</th>
+            <th>COORDENADA Y</th>
+			<th>FICHA CATASTRAL</th>
+			
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+           
+            <td>150717-01-001-001</td>
+			<td>01</td>
+            <td>001</td>
+            <td>001</td>
+            <td>87.8870279</td>
+            <td>45.45617151</td>
+            <td>-76.53125559</td>
+			<td>-11.90964111</td>
+			
+            <td>
+			<a href="SECTOR\01\MANZANA\001\LOTE\001\ingreso.html" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+            
+            <td>150717-01-001-002</td>
+			<td>01</td>
+            <td>001</td>
+            <td>002</td>
+            <td>55.28014072	</td>
+            <td>41.76089889	</td>
+            <td>-76.5312197</td>
+			<td>-11.90963094</td>
+			
+            <td>
+			<a href="SECTOR\01\MANZANA\001\LOTE\001\LOTE-150717-01-001-001.html" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+            
+            <td>150717-01-001-003</td>
+			<td>01</td>
+            <td>001</td>
+            <td>003</td>
+            <td>60.01182768</td>
+            <td>42.29703341</td>
+            <td>-76.53119209</td>
+			<td>-11.9096198</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+            
+            <td>150717-01-001-004</td>
+			<td>01</td>
+            <td>001</td>
+            <td>004</td>
+            <td>170.7368585</td>
+            <td>54.78995281</td>
+            <td>-76.53113467</td>
+			<td>-11.90960323</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+            
+            <td>150717-01-001-005</td>
+			<td>01</td>
+            <td>001</td>
+            <td>005</td>
+            <td>225.9333231	</td>
+            <td>61.14749647	</td>
+            <td>-76.53103662</td>
+			<td>-11.90957451</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+           
+            <td>150717-01-001-006</td>
+			<td>01</td>
+            <td>001</td>
+            <td>006</td>
+            <td>134.9925244	</td>
+            <td>51.09411276	</td>
+            <td>-76.53095017</td>
+			<td>-11.90954283</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+           
+            <td>150717-01-001-007</td>
+			<td>01</td>
+            <td>001</td>
+            <td>007</td>
+            <td>138.4990282	</td>
+            <td>51.69849362	</td>
+            <td>-76.53088234</td>
+			<td>-11.90952532</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+            
+            <td>150717-01-001-008</td>
+			<td>01</td>
+            <td>001</td>
+            <td>008</td>
+            <td>146.1115441	</td>
+            <td>53.37137642	</td>
+            <td>-76.53079857</td>
+			<td>-11.909491</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+            
+            <td>150717-01-001-009</td>
+			<td>01</td>
+            <td>001</td>
+            <td>009</td>
+            <td>159.133036	</td>
+            <td>55.65255334	</td>
+            <td>-76.53073005</td>
+			<td>-11.90946809</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+           
+            <td>150717-01-001-010</td>
+			<td>01</td>
+            <td>001</td>
+            <td>010</td>
+            <td>243.695576	</td>
+            <td>64.19780516	</td>
+            <td>-76.53064202</td>
+			<td>-11.90943815</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+           
+            <td>150717-01-001-011</td>
+			<td>01</td>
+            <td>001</td>
+            <td>011</td>
+            <td>279.9700515	</td>
+            <td>67.1126635	</td>
+            <td>-76.53049354</td>
+			<td>-11.90940657</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+           
+            <td>150717-01-001-012</td>
+			<td>01</td>
+            <td>001</td>
+            <td>012</td>
+            <td>192.1353035	</td>
+            <td>57.55009974	</td>
+            <td>-76.53037409</td>
+			<td>-11.9093881</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+           
+            <td>150717-01-001-013</td>
+			<td>01</td>
+            <td>001</td>
+            <td>013</td>
+            <td>195.7839441	</td>
+            <td>58.09096293	</td>
+            <td>-76.53027406</td>
+			<td>-11.90939044</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+            
+            <td>150717-01-001-014</td>
+			<td>01</td>
+            <td>001</td>
+            <td>014</td>
+            <td>70.84147066	</td>
+            <td>45.21826445	</td>
+            <td>-76.53020796</td>
+			<td>-11.90938814</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+            
+            <td>150717-01-001-015</td>
+			<td>01</td>
+            <td>001</td>
+            <td>015</td>
+            <td>174.5740548	</td>
+            <td>56.3460663	</td>
+            <td>-76.53014836</td>
+			<td>-11.90938733</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+            
+            <td>150717-01-001-016</td>
+			<td>01</td>
+            <td>001</td>
+            <td>016</td>
+            <td>178.61601	</td>
+            <td>56.87192094	</td>
+            <td>-76.53006241</td>
+			<td>-11.90938576</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+            
+            <td>150717-01-001-017</td>
+			<td>01</td>
+            <td>001</td>
+            <td>017</td>
+            <td>173.8866576	</td>
+            <td>59.49069799	</td>
+            <td>-76.52997207</td>
+			<td>-11.90937486</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+           
+            <td>150717-01-001-018</td>
+			<td>01</td>
+            <td>001</td>
+            <td>018</td>
+            <td>255.5930764	</td>
+            <td>68.66007348	</td>
+            <td>-76.52988192</td>
+			<td>-11.90940674</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+           
+            <td>150717-01-001-019</td>
+			<td>01</td>
+            <td>001</td>
+            <td>019</td>
+            <td>322.4542382	</td>
+            <td>72.50168496	</td>
+            <td>-76.52977538</td>
+			<td>-11.90946948</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+           
+            <td>150717-01-001-020</td>
+			<td>01</td>
+            <td>001</td>
+            <td>020</td>
+            <td>268.5204623	</td>
+            <td>66.77558725	</td>
+            <td>-76.52967462</td>
+			<td>-11.90958349</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		<tr>
+            
+            <td>150717-01-001-021</td>
+			<td>01</td>
+            <td>001</td>
+            <td>021</td>
+            <td>149.8206017	</td>
+            <td>49.55161363	</td>
+            <td>-76.52957242</td>
+			<td>-11.90969507</td>
+			
+            <td>
+			<a href="1_individual.pdf" download>Descargar Fichas Catastrales</a>
+			</td>
+        </tr>
+		
+		
+
+        <!-- Aquí sigue el resto de tus datos, cada fila representada similar a la anterior -->
+    </tbody>
+</table>
+
+<script>
+    // Obtener referencia a la tabla y al campo de filtro
+    let tabla = document.getElementById('dataTable');
+    let inputFiltro = document.getElementById('filtroID');
+
+    // Función para filtrar la tabla por ID
+    function filtrarTabla() {
+        let filtro = inputFiltro.value.toUpperCase();
+        let filas = tabla.getElementsByTagName('tr');
+
+        for (let i = 0; i < filas.length; i++) {
+            let celdaID = filas[i].getElementsByTagName('td')[0]; // Primera celda con el ID
+
+            if (celdaID) {
+                let textoCelda = celdaID.textContent || celdaID.innerText;
+
+                if (textoCelda.toUpperCase().indexOf(filtro) > -1) {
+                    filas[i].style.display = '';
+                } else {
+                    filas[i].style.display = 'none';
+                }
+            }
+        }
+    }
+</script>
+
+
+</body>
+</html>
